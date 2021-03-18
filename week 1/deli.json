@@ -1,0 +1,51 @@
+{
+    "appetizers":[
+        {
+            "name": "Fried Pickels",
+            "price" : 3.00,
+            "ingrediants": ["pickles", "batter", "vegstible oil", "salt", "pepper"],
+            "desc.": "Pickles fried in batter with the perfect mix to give you a wonderful southern snack."
+        },
+        {
+            "name":"Pasta Salad",
+            "price": 2.50,
+            "ingrediants":["pasta", "vinegar", "salt & pepper", "herbs"],
+            "desc.": "Pasta salad is a staple side served as a cold mix if pasta with vinegar and spices."
+        },
+        {
+            "name":"Chips",
+            "price":1.25,
+            "ingrediants": ["potatoe slices", "vegstible oil", "salt"],
+            "desc.": "Simple potatoe chips that go with any sandwitch, with your choice of oven baked or fried"
+        }
+
+    ],
+    "cold sandwitches":[
+        {
+            "name":"Deli Club",
+            "price": 4.00,
+            "ingredients": ["Your choice of bread","turkey", "lettuce", "tomatoe","bacon" ],
+            "desc.":"A classic cold sandwitch with turkey and bacon on your choice of bread and cheese."
+        },
+        {
+            "name":"Ham & Cheese",
+            "price": 4.50,
+            "ingredients": ["Your choice of bread", "ham", "tomatoe", "lettuce"],
+            "desc.":"A simple ham and cheese with your choice of bread, lettuce, and tomatoe."
+        },
+        {
+            "name":"egg salad",
+            "price":3.75,
+            "ingredients":["egg", "mayo", "mustard", "pickle", "onion","sugar"],
+            "desc.":"A more Japaneese styled egg salad sandwitch which has a sweet tasting bite."
+        }
+    ],
+    "hot sandwitches":[
+        {
+            "name":"Ruben sandwitch",
+            
+        }
+    ]
+
+    
+}
