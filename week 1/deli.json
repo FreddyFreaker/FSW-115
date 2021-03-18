@@ -43,8 +43,46 @@
     "hot sandwitches":[
         {
             "name":"Ruben sandwitch",
+            "price":5.00,
+            "ingrediants":["corned beef", "sourkraut","sourdough bread","Spicy mustard","swiss cheese"],
+            "desc.": "A hot sandwitch with a spicy kick, made with all natural kosher friendly ingredients this meal goes well with a cold day"
             
+        },
+        {
+            "name":"grilled cheese",
+            "price":2.00,
+            "ingrediants":["butter", "cheese of your choice", "white bread"],
+            "desc.":"An origanal style of warm sandwitch with a simple recipe of cheese, bread, and butter. This meal comes with some tomatoe soup on the side."
         }
+    ],
+    "desserts":[
+        {
+            "name":"Cheese cake",
+            "price":2.00,
+            "ingredients":["cream","cream cheese", "sugar","egg","butter","vanilla","sour cream","graham cracker"],
+            "desc.":"New York style with your choice of sauce on top, a classic dessert or a sweet snack. "
+        },
+        {
+            "name":"ice cream",
+            "price":1.00,
+            "ingredients":["cream","sugar","milk","vanilla"],
+            "desc.":"Plain vanilla ice cream, used to cool you off on a hot summer day."
+        }
+    ],
+    "Drinks":[
+        {
+            "name":"lemonade",
+            "price":0.50,
+            "ingredients":["lemons", "sugar", "water"],
+            "desc.":"Old fashioned lemonade for a warm day, simple mix of lemon juice, water, and sugar."
+        },
+        {
+            "name":"coffee",
+            "price":0.75,
+            "ingredients":["coffee beans", "water", "cream","sugar"],
+            "desc.":"Coffee is a great caffinated drink to pick you up when you need it. Perfect with cream, milk, sugar, and flavoring it ties together well when hot or iced."
+        }
+
     ]
 
     
