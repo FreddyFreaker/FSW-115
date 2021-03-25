@@ -32,3 +32,5 @@ var dataList = document.getElementById("data")
 for (var i = 0; i < myArray.length; i++) {
     dataList.innerHTML += "<li>" + myArray[i] + "</li>"
 }
+
+console.log(myArray)
