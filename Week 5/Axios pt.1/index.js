@@ -27,10 +27,23 @@ const displayItems = (items) => {
        
         let deleteButton = document.createElement("button")
         deleteButton.textContent = "DELETE"
+        deleteButton.value = item._id
        deleteButton.addEventListener("click", deleteItem)
         card.appendChild(deleteButton)
 
+        let updateButton = document.createElement("button")
+        let updateText = ""
+        if(item.isComplete === false) {
+            updateText = "Mark Complete"
+        }else{
+            updateText = "Mark incomplete"
+        }
 
+        updateButton.textContent = updateText
+        updateButton.id = item._id
+        updateButton.value = 
+       updateButton.addEventListener("click", updateItem)
+        card.appendChild(updateButton)
         
         list.appendChild(card)
 
@@ -73,6 +86,36 @@ form.addEventListener("submit", putItem)
 
 
 
-const deleteItem = () => {
+const deleteItem = (e) => {
+    let itemId= e.target.value
 
+    axios.delete(`http://api.bryanuniversity.edu/jeremiah/list/${itemId}`)
+    .then(res => {
+        console.log(res.data)
+    })
+    .catch(err => {
+        console.error(err); 
+    })
+}
+
+
+const updateItem = (e) =>{
+    let itemId= e.target.value
+    let itemComplete = e.target.value
+
+    let completed = null
+
+    itemComplete === "false" ? completed = true : completed = false
+
+    let updatedItem = {
+        isComplete: completed
+    }
+    axios.put(`http://api.bryanuniversity.edu/jeremiah/list/${itemId}`, updatedItem)
+    .then(res => {
+        console.log(res.data)
+        location.reload()
+    })
+    .catch(err => {
+        console.error(err); 
+    })
 }
