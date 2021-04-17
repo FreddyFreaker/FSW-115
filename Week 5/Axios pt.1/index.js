@@ -19,9 +19,8 @@ const displayItems = (items) => {
         let nameElement = document.createElement("p")
         nameElement.textContent = `${item.name} ||
         desc. ${item.description} 
-       || price: ${item.price} `
+       || price: ${item.price} || Is Complete: ${item.isComplete} `
         card.appendChild(nameElement)
-       
        
        
        
@@ -31,17 +30,19 @@ const displayItems = (items) => {
        deleteButton.addEventListener("click", deleteItem)
         card.appendChild(deleteButton)
 
-        let updateButton = document.createElement("button")
+        let updateButton = document.createElement("input")
+        updateButton.setAttribute("type", "checkbox")
         let updateText = ""
         if(item.isComplete === false) {
             updateText = "Mark Complete"
+
         }else{
             updateText = "Mark incomplete"
         }
 
         updateButton.textContent = updateText
         updateButton.id = item._id
-        updateButton.value = 
+        updateButton.value = item.isComplete
        updateButton.addEventListener("click", updateItem)
         card.appendChild(updateButton)
         
@@ -100,7 +101,7 @@ const deleteItem = (e) => {
 
 
 const updateItem = (e) =>{
-    let itemId= e.target.value
+    let itemId= e.target.id
     let itemComplete = e.target.value
 
     let completed = null
